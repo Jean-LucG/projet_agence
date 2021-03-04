@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>réservation</title>
+    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+    <nav class="topnav">
+        <a href="index.html">Accueil</a>
+        <a href="aproposetcontact.html">&Agrave; propos &amp; Contact</a>
+    </nav>
+    <h1>Réservation</h1>
+
+    <h2>Entré vos informations:</h2>
+    <div>
+        <form action="/Récapitulatif.html" method="GET">
+        Prénom : <br>
+        <input type="text" name="firstname"> <br>
+        <br>
+        Nom: <br>
+        <input type="text" name='lastname'> <br>   
+        <br>
+        Adresse e-mail: <br>
+        <input type="email" > <br>
+        <br>
+        Téléphone: <br>
+        <input type="tel" > <br>
+        <br>
+        Date de départ: <br>
+        <input type="date" id="depart" required onchange="PrixTolal()"> <br>
+        <br>
+        Date de retour: <br>
+        <input type="date" id="arrivee" required onchange="PrixTotal()"> <br>
+        <br>
+        Nombre d'adultes: <br>
+        <input type="number" id="adultes" onchange="PrixTotal()"> <br>
+        <br>
+        Nombre d'enfants: <br>
+        <input type="number" id="enfants" onchange="PrixTotal()"> <br>
+        <br>
+        Petit Déjeuner: 12€ / personnes <br>
+        <input type="radio" id="ouiPD" name="PetitDejeuner" value="1" checked onchange="PrixTotal()"> OUI
+        <input type="radio" id="nonPD" name="PetitDejeuner" value="0" checked onchange="PrixTotal()"> NON <br>
+        <br>
+        <input type="radio" name="sexe" checked> HOMME
+        <input type="radio" name="sexe" checked> FEMME
+        <br>    
+        <br>
+        Prix total:
+        <template id="CalculPrix"> 
+            <span>{{PrixTot}}</span>
+        </template><br>
+        <input type="submit" value="Confirmer">
+        <input type="submit" value="Reset">
+    </form>
+    </div>
+
+</body>
+</html>
