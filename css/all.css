@@ -33,6 +33,5 @@ p, div, li{
   color:white;
   font-size: 15px
 }
-ul { 
-  list-style-type:none
+ul, li {list-style-type:none
 }
