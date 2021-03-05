@@ -2,3 +2,6 @@ img {
     width: 200px;
     height:100px;
     }
+img:hover{
+    opacity: 0.5
+}
