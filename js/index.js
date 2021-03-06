@@ -20,7 +20,8 @@ for (const k of Tab) {
     newContent = clone.firstElementChild.innerHTML
         .replace(/{{image}}/g, "../images/"+k.image)
         .replace(/{{lieu}}/g, k.lieu)
-        .replace(/{{prix}}/g, k.prix);
+        .replace(/{{prix}}/g, k.prix)
+        .replace(/{{id}}/g,"reservation.html#"+String(k.id));
         clone.firstElementChild.innerHTML = newContent
         document.body.appendChild(clone);
 }
