@@ -1,5 +1,3 @@
-
-
 let template = document.querySelector("#destination");
 for (const k of Tab) {
     let clone = document.importNode(template.content, true);
@@ -11,4 +9,3 @@ for (const k of Tab) {
         clone.firstElementChild.innerHTML = newContent
         document.body.appendChild(clone);
 }
-
