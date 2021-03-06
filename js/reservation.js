@@ -1,7 +1,7 @@
 var url=window.location.href;
 var indice =parseInt(url.substring(url.length - 1,url.length));
 
-
+document.getElementById("voyage").innerHTML="Voyage à "+String(Tab[indice].lieu);
 
 
 
