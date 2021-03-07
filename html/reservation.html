@@ -19,13 +19,13 @@
     <div>
         <form action="recapitulatif.html" method="GET">
         Prénom : <br>
-        <input type="text" name="firstname"> <br>
+        <input type="text" required name="firstname"> <br>
         <br>
         Nom: <br>
-        <input type="text" name='lastname'> <br>   
+        <input type="text" required name='lastname'> <br>   
         <br>
         Adresse e-mail: <br>
-        <input type="email" > <br>
+        <input type="email" required> <br>
         <br>
         Téléphone: <br>
         <input type="tel" > <br>
@@ -37,12 +37,12 @@
         <input type="date" id="arrivee" required onchange="PrixTotal()"> <br>
         <br>
         Nombre d'adultes: <br>
-        <input type="number" id="adultes" onchange="PrixTotal()"> <br>
+        <input type="number" id="adultes" required onchange="PrixTotal()" value=0> <br>
         <br>
         Nombre d'enfants: <br>
-        <input type="number" id="enfants" onchange="PrixTotal()"> <br>
+        <input type="number" id="enfants" required onchange="PrixTotal()" value=0> <br>
         <br>
-        Petit Déjeuner: 12€ / personnes <br>
+        Petit Déjeuner: 12&euro; / personnes <br>
         <input type="radio" id="ouiPD" name="PetitDejeuner" value="1" checked onchange="PrixTotal()"> OUI
         <input type="radio" id="nonPD" name="PetitDejeuner" value="0" checked onchange="PrixTotal()"> NON <br>
         <br>
