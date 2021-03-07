@@ -5,7 +5,7 @@ for (const k of Tab) {
         .replace(/{{image}}/g, "../images/"+k.image)
         .replace(/{{lieu}}/g, k.lieu)
         .replace(/{{prix}}/g, k.prix)
-        .replace(/{{id}}/g,"reservation.html#"+String(k.id));
+        .replace(/{{id}}/g,"reservation.html?id="+String(k.id));
         clone.firstElementChild.innerHTML = newContent
         document.body.appendChild(clone);
 }
