@@ -1,6 +1,5 @@
-var url=window.location.href;
-var indice =parseInt(url.substring(url.length - 1,url.length));
-
+var str =window.location.search;
+var indice=parseInt(str.substring(4,str.length));
 document.getElementById("voyage").innerHTML="Voyage à "+String(Tab[indice].lieu);
 
 //valeur test
