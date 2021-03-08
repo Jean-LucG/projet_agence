@@ -14,9 +14,16 @@
     <a href="aproposetcontact.html">&Agrave; propos &amp; Contact</a>
     </nav>
     <h1>Accueil</h1>
+    <h2>Filtrez selon votre budget:</h2>
+    <div>
+        <form>
+            Prix max:<input type="number" min=0>&euro;
+            Prix min:<input type="number" min=0>&euro;
+        </form>
+    </div>
     <template id="destination">
         <ul> 
-            <li><a href={{id}}><img src={{image}}></li></a>
+            <li><a href={{id}}><img src={{image}}></a></li>
             <li>{{lieu}}</li>
             <li>{{prix}}.00&euro;</li>
         </ul>
